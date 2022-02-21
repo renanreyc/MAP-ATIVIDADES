@@ -24,14 +24,18 @@ public class EscalaTest {
         this.escala = EscalaBuilder.mockEscala().getEscala();
     }
 
-    @Test
-    public void getAll() {
-        this.escalaService.save(this.escala);
-        this.escalaService.save(this.escala);
 
-        assertFalse(this.escalaService.getAll().isEmpty());
-        assertEquals(this.escalaService.getAll().size(),2);
+    public void getAll() {
+        assertEquals(this.escalaService.getAll().size(),1);
     }
+
+    @Test
+    public void getAllIsEmpty() {
+        this.escalaService.save(this.escala);
+        assertFalse(this.escalaService.getAll().isEmpty());
+        getAll();
+    }
+
 
     @Test
     public void getById() {
