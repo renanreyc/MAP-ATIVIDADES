@@ -5,7 +5,7 @@ public enum ListaFuncoes {
     ATOR("Ator"),
     DIRETOR("Diretor"),
     PRODUTOR("Produtor"),
-    ELENCO("Elecon"),
+    ELENCO("Eleco"),
     TRILHASONORA("Trilha Sonora"),
     CAMERA("Camera"),
     CINEGRAFISTA("Cinegrafista"),

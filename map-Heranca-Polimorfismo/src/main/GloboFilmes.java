@@ -18,10 +18,13 @@ public class GloboFilmes {
     private final FuncionarioServico funcionarioServico;
     private final EscalaServico escalaServico;
 
-    public GloboFilmes(FilmeServico filmeServico, FuncionarioServico funcionarioServico, EscalaServico escalaServico) {
-        this.filmeServico = filmeServico;
-        this.funcionarioServico = funcionarioServico;
-        this.escalaServico = escalaServico;
+
+
+    public GloboFilmes() {
+
+        this.filmeServico = new FilmeServico();
+        this.funcionarioServico = new FuncionarioServico();
+        this.escalaServico = new EscalaServico();
     }
 
     public Filme createFilme(String nome, String ano) {

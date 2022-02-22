@@ -24,12 +24,14 @@ public class FilmeTest {
     }
 
     @Test
-    public void getAll() {
+    public void getAllIsEmpty() {
         this.filmeService.save(this.filme);
-        this.filmeService.save(this.filme);
-
         assertFalse(this.filmeService.getAll().isEmpty());
-        assertEquals(this.filmeService.getAll().size(),2);
+        getAll();
+    }
+
+    public void getAll() {
+        assertEquals(this.filmeService.getAll().size(),1);
     }
 
     @Test

@@ -24,12 +24,14 @@ public class FuncionarioTest {
     }
 
     @Test
-    public void getAll() {
+    public void getAllIsEmpty() {
         this.funcionarioService.save(this.funcionario);
-        this.funcionarioService.save(this.funcionario);
-
         assertFalse(this.funcionarioService.getAll().isEmpty());
-        assertEquals(this.funcionarioService.getAll().size(),2);
+        getAll();
+    }
+
+    public void getAll() {
+        assertEquals(this.funcionarioService.getAll().size(),1);
     }
 
     @Test

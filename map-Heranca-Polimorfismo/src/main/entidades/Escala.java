@@ -52,7 +52,8 @@ public class Escala extends Entidade {
         int i = 1;
         for (IFuncao funcao : this.funcoes) {
             builder.append("\n");
-            builder.append("Função [" + i++ + "]: " + funcao.getFuncao());
+            builder.append("Função [" + i + "]: " + funcao.getFuncao());
+            i++;
         }
 
         return builder.toString();
