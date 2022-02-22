@@ -30,7 +30,6 @@ public class EscalaBuilder {
 
             builder.collectionEscala.add(escala);
         }
-
         return builder;
     }
 

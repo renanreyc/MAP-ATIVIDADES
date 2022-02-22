@@ -18,8 +18,6 @@ public class GloboFilmes {
     private final FuncionarioServico funcionarioServico;
     private final EscalaServico escalaServico;
 
-
-
     public GloboFilmes() {
 
         this.filmeServico = new FilmeServico();
@@ -73,7 +71,7 @@ public class GloboFilmes {
 
         StringBuilder builder = new StringBuilder();
 
-        builder.append("=========== Filmografia do Funcionario: " + nome + " na Função: " + funcao.getNome());
+        builder.append("=========== Filmografia do Funcionario " + nome + ": ");
 
         List<Escala> escalas = this.escalaServico.findByFuncionarioAndFuncao(nome, funcao.getNome());
 

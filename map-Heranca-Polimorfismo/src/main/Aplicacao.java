@@ -3,11 +3,8 @@ package main;
 import main.entidades.Escala;
 import main.entidades.Filme;
 import main.entidades.Funcionario;
-import main.funcoes.Funcao;
 import main.funcoes.ListaFuncoes;
-import main.servicos.EscalaServico;
-import main.servicos.FilmeServico;
-import main.servicos.FuncionarioServico;
+
 
 public class Aplicacao {
 
@@ -15,10 +12,10 @@ public class Aplicacao {
 
         GloboFilmes globoFilmes = new GloboFilmes();
 
-        Filme filme1 = globoFilmes.createFilme("Era Uma Vez No Espaço", "2003");
+        Filme filme1 = globoFilmes.createFilme("Clube da Luta", "1999");
 
         Funcionario funcionario1 = globoFilmes.createFuncionario("Renan");
-        Funcionario funcionario2 = globoFilmes.createFuncionario("Eliseu");
+        Funcionario funcionario2 = globoFilmes.createFuncionario("Eliseu Pitt");
         Funcionario funcionario3 = globoFilmes.createFuncionario("Sabrina");
         Funcionario funcionario4 = globoFilmes.createFuncionario("Britney");
         Funcionario funcionario5 = globoFilmes.createFuncionario("Luan");
@@ -30,7 +27,7 @@ public class Aplicacao {
         Escala escala4 = globoFilmes.createEscala(funcionario4, filme1, ListaFuncoes.ROTEIRISTA, ListaFuncoes.ATOR);
         Escala escala5 = globoFilmes.createEscala(funcionario5, filme1, ListaFuncoes.TRILHASONORA);
 
-        Filme filme2 = globoFilmes.createFilme("2001 - Uma Odisseia no Espaco", "2020");
+        Filme filme2 = globoFilmes.createFilme("Interestelar", "2014");
         Escala escala6 = globoFilmes.createEscala(funcionario1, filme2, ListaFuncoes.ROTEIRISTA, ListaFuncoes.ATOR);
         Escala escala7 = globoFilmes.createEscala(funcionario2, filme2, ListaFuncoes.DIRETOR);
         Escala escala8 = globoFilmes.createEscala(funcionario3, filme2, ListaFuncoes.ATOR);
@@ -41,7 +38,7 @@ public class Aplicacao {
         System.out.println(globoFilmes.listAllFilmesComEscalas());
 
         System.out.println(globoFilmes.listFilmografiaByFuncionarioAndFuncao(funcionario1.getNome(), ListaFuncoes.DIRETOR));
-        System.out.println(globoFilmes.listFilmografiaByFuncionarioAndFuncao(funcionario1.getNome(), ListaFuncoes.TRILHASONORA));
+        System.out.println(globoFilmes.listFilmografiaByFuncionarioAndFuncao(funcionario2.getNome(), ListaFuncoes.TRILHASONORA));
         System.out.println(globoFilmes.listFilmografiaByFuncionarioAndFuncao(funcionario4.getNome(), ListaFuncoes.ATOR));
     }
 }

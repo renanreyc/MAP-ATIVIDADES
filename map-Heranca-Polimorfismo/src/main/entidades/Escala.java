@@ -47,7 +47,7 @@ public class Escala extends Entidade {
         StringBuilder builder = new StringBuilder();
 
         builder.append("\n");
-        builder.append("======= Funcoes  do Funcionario " + this.funcionario.getNome() + " no Filme: " + this.filme.getNome() + " ===========");
+        builder.append("======= Funções do Funcionario " + this.funcionario.getNome() + " =======");
 
         int i = 1;
         for (IFuncao funcao : this.funcoes) {

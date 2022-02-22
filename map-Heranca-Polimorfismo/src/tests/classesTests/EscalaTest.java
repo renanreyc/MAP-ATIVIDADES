@@ -19,14 +19,13 @@ public class EscalaTest {
     private Escala escala;
 
     @Before
-    public void setUp(){
+    public void setUp() {
         this.escalaService = new EscalaServico();
         this.escala = EscalaBuilder.mockEscala().getEscala();
     }
 
-
     public void getAll() {
-        assertEquals(this.escalaService.getAll().size(),1);
+        assertEquals(this.escalaService.getAll().size(), 1);
     }
 
     @Test
@@ -35,7 +34,6 @@ public class EscalaTest {
         assertFalse(this.escalaService.getAll().isEmpty());
         getAll();
     }
-
 
     @Test
     public void getById() {

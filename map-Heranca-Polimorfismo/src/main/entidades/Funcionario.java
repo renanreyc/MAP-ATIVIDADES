@@ -1,7 +1,5 @@
 package main.entidades;
 
-import main.funcoes.IFuncao;
-
 import java.util.ArrayList;
 import java.util.List;
 
