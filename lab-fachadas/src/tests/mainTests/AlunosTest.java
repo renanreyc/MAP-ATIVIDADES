@@ -19,7 +19,7 @@ import main.entities.Matricula;
 import main.entities.Sala;
 import main.BaseRepository;
 
-public class AlunoServiceTest {
+public class AlunosTest {
 
     private Alunos alunoService;
     private BaseRepository<Aluno> repositorio;
@@ -43,7 +43,7 @@ public class AlunoServiceTest {
     @Test
     public void testFinalizarSemestre() {
         this.aluno.setMatriculas((List<Matricula>)MatriculaBuilder.mockCollectionMatriculas().getMatriculas());
-        assertFalse(this.alunoService.finalizarSemestre(this.aluno).getHistoricos().isEmpty());
+        assertFalse(this.alunoService.finalizarSemestre(this.aluno).getHistorico().isEmpty());
     }
 
     @Test

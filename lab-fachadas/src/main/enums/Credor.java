@@ -1,11 +1,12 @@
 package main.enums;
 
 public enum Credor {
-    DIRETORA,
+    DIRETOR,
     PROFESSOR,
     VIGIA,
     MERENDEIRA,
-    LIMPEZA,
+    ZELADOR,
     ALUNO,
-    COMPRA
+    ITENSDELIMPEZA,
+    COMIDAS
 }

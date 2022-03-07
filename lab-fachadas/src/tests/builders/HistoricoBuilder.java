@@ -13,7 +13,7 @@ public class HistoricoBuilder {
 		HistoricoBuilder builder = new HistoricoBuilder();
 		Disciplina disciplina = DisciplinaBuilder.mockDisciplina().getDisciplina();
 		Sala sala = SalaBuilder.mockSala().getSala();
-		Professor professor = builders.ProfessorBuilder.mockProfessor().getProfessor();
+		Professor professor = ProfessorBuilder.mockProfessor().getProfessor();
 		
 		builder.historico = new Historico(disciplina.getNome(), sala.getCodigo(), new Double(7.5), professor.getNome());
 		

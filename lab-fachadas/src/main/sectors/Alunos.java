@@ -30,7 +30,7 @@ public class Alunos {
                     matricula.getSala().getProfessor().getNome()
             );
 
-            aluno.getHistoricos().add(historico);
+            aluno.getHistorico().add(historico);
         }
 
         return aluno;

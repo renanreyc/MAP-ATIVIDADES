@@ -1,6 +1,8 @@
 package main.enums;
 
 public enum Proficiencias {
+    BIOLOGIA,
+    INGLES,
     PORTUGUES,
     MATEMATICA,
     QUIMICA,

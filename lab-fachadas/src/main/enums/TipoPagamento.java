@@ -1,5 +1,9 @@
 package main.enums;
 
 public enum TipoPagamento {
-    SALARIO, COMPRA, MATRICULA, DOACAO
+    SALARIO,
+    PIX,
+    COMPRA,
+    MATRICULA,
+    DOACAO
 }

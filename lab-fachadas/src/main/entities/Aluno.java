@@ -5,12 +5,12 @@ public class Aluno extends Entity {
 
     private String nome;
     private List<Matricula> matriculas;
-    private List<Historico> historicos;
+    private List<Historico> historico;
 
-    public Aluno(String nome, List<Matricula> matriculas, List<Historico> historicos) {
+    public Aluno(String nome, List<Matricula> matriculas, List<Historico> historico) {
         this.nome = nome;
         this.matriculas = matriculas;
-        this.historicos = historicos;
+        this.historico = historico;
     }
 
     public String getNome() {
@@ -29,11 +29,11 @@ public class Aluno extends Entity {
         this.matriculas = matriculas;
     }
 
-    public List<Historico> getHistoricos() {
-        return historicos;
+    public List<Historico> getHistorico() {
+        return historico;
     }
 
-    public void setHistoricos(List<Historico> historicos) {
-        this.historicos = historicos;
+    public void setHistorico(List<Historico> historico) {
+        this.historico = historico;
     }
 }
